@@ -1,20 +1,8 @@
 
 <?php
 
-return [
 
-    /*
-    |--------------------------------------------------------------------------
-    | Cross-Origin Resource Sharing (CORS) Configuration
-    |--------------------------------------------------------------------------
-    |
-    | Here you may configure your settings for cross-origin resource sharing
-    | or "CORS". This determines what cross-origin operations may execute
-    | in web browsers. You are free to adjust these settings as needed.
-    |
-    | To learn more: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
-    |
-    */
+return [
 
     'paths' => ['api/*', 'sanctum/csrf-cookie'],
 
@@ -26,7 +14,7 @@ return [
         'http://localhost:3000',
         'http://127.0.0.1:5173',
         'http://127.0.0.1:5174',
-        'https://inscription-cyber.vercel.app/',
+        'https://inscription-cyber.vercel.app',
     ],
 
     'allowed_origins_patterns' => [],
@@ -34,7 +22,6 @@ return [
     'allowed_headers' => ['*'],
 
     'exposed_headers' => [],
-    'allowed_headers' => ['*'],
 
     'max_age' => 0,
 
